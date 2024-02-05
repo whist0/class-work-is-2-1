@@ -59,35 +59,35 @@ let college = [
 
 let count = 1
 let studentAge = college[count]["age"]
-let studentName = college[count]["name"]
+let peopleName = college[count]["name"]
 let studentCash = college[count]["cash"]
 let isStudent = college[count]["isStudent"]
 let isKurator = college[count]["isKurator"]
 let isKuratorGroup = college[count]["kuratorGroup"]
 
 if (isStudent === true) {
-    console.log(`Вы выбрали студента ${studentName}`)
+    console.log(`Вы выбрали студента ${peopleName}`)
     if (studentAge >= 18) {
-        console.log(`Студент ${studentName} совершеннолетний. Ему ${studentAge} лет`)
+        console.log(`Студент ${peopleName} совершеннолетний. Ему ${studentAge} лет`)
     }
     else {
-        console.log(`Студент ${studentName} не совершеннолетний. Ему ${studentAge} лет`)
+        console.log(`Студент ${peopleName} не совершеннолетний. Ему ${studentAge} лет`)
     }
     if (studentCash >= 4500) {
-        console.log(`Студент ${studentName} получает повышенную стипендию. ${studentCash} руб.`)
+        console.log(`Студент ${peopleName} получает повышенную стипендию. ${studentCash} руб.`)
     }
     else if (studentCash <= 4500 && studentCash >= 1) {
-        console.log(`Студент ${studentName} получает обычную стипендию. ${studentCash} руб.`)
+        console.log(`Студент ${peopleName} получает обычную стипендию. ${studentCash} руб.`)
     }
     else if  ( studentCash == 0 ) {
-        console.log(`Студент ${studentName} не получает стипендию.`)
+        console.log(`Студент ${peopleName} не получает стипендию.`)
 
 }
 
 else if (isStudent === false) {
-    console.log(`Вы выбрали студента ${studentName}`)
+    console.log(`Вы выбрали студента ${peopleName}`)
     if (isKurator === true) {
-        console.log(`Преподаватель ${peolpeName} куратор группы ${isKuratorGroup}`)
+        console.log(`Преподаватель ${peopleName} куратор группы ${isKuratorGroup}`)
     }
 }
 }
