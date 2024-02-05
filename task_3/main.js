@@ -20,6 +20,13 @@ let college = [
     {name: "Harry", age: 17, group: "ИС-4-1"},
 ];
 
-college[0]["age"] = 24;
+let count = 2
+let studentAge = college[0]["age"];
+let studentName = college[0]["name"];
 
-console.log(college[2]["name"]);
+if (studentAge >= 18) {
+    console.log(`Студент ${studentName} совершеннолетний. Ему ${studentAge} лет`)
+} 
+else if (studentAge < 18) {
+    console.log(`Студент ${studentName} не совершеннолетний. Ему ${studentAge} лет`)
+}
