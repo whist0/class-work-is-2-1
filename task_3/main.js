@@ -52,33 +52,42 @@ let college = [
     isKurator: true,
     kuratorGroup: "ИС-3-1",
     kafedra: "Инф.технологии",
-    predmet: ["Мат. моделирование", "ЭВМ", "Математика"],
+    predmet: ["Основы проектной деятельности", "ИТ", "Информатика"],
     isStudent: false,
     },
 ]
 
-if (college[0]["isStudent"] === true) {
-    console.log(`Студент ${college[0]["name"]}`)
-    if (college[0]["age"] >= 18) {
-        console.log(`Студент ${college[0]["name"]} совершеннолетний.`)
+let count = 1
+let studentAge = college[count]["age"]
+let studentName = college[count]["name"]
+let studentCash = college[count]["cash"]
+let isStudent = college[count]["isStudent"]
+let isKurator = college[count]["isKurator"]
+let isKuratorGroup = college[count]["kuratorGroup"]
+
+if (isStudent === true) {
+    console.log(`Вы выбрали студента ${studentName}`)
+    if (studentAge >= 18) {
+        console.log(`Студент ${studentName} совершеннолетний. Ему ${studentAge} лет`)
     }
     else {
-        console.log(`Студент ${college[0]["name"]} не совершеннолетний.`)
+        console.log(`Студент ${studentName} не совершеннолетний. Ему ${studentAge} лет`)
     }
-    if (college[0]["cash"] >= 4500) {
-        console.log(`Студент ${college[0]["name"]} получает повышенную стипендию.`)
+    if (studentCash >= 4500) {
+        console.log(`Студент ${studentName} получает повышенную стипендию. ${studentCash} руб.`)
     }
-    else if (college[0]["cash"] <= 4500 && college[0]["cash"] >= 1) {
-        console.log(`Студент ${college[0]["name"]} получает обычную стипендию.`)
+    else if (studentCash <= 4500 && studentCash >= 1) {
+        console.log(`Студент ${studentName} получает обычную стипендию. ${studentCash} руб.`)
     }
-    else if  ( college[0]["cash"] == 0 ) {
-        console.log(`Студент ${college[0]["name"]} не получает стипендию.`)
+    else if  ( studentCash == 0 ) {
+        console.log(`Студент ${studentName} не получает стипендию.`)
 
 }
 
-else if (college[0]["isStudent"] === false) {
-    console.log(`Вы выбрали студента ${college[0]["name"]}`)
-    if (college[0]["isKurator"] === true) {
-        console.log(`Преподаватель ${college[0]["name"]} куратор группы ${college[0]["name"]}`)
+else if (isStudent === false) {
+    console.log(`Вы выбрали студента ${studentName}`)
+    if (isKurator === true) {
+        console.log(`Преподаватель ${peolpeName} куратор группы ${isKuratorGroup}`)
     }
+}
 }
