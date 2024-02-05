@@ -7,14 +7,18 @@
 // let kab = college[1][1];
 // console.log(kab);
 
-let number = [1, 2, 3, 4];
+let number = [1, 2, 3, 4, 5, 6, 7];
 
-const countLength = 5;
+const coutLength = 5;
 
-if (number.length === countLength) {
+if (number.length === coutLength) {
     console.log("ok");
 } 
-else if (number.length < countLength) {
-    let result = countLength - number.length;
-    console.log(`Длина вашего массива: ${number.length}. Длину массива нужно увеличить до ${countLength}. Прибавьте к массиву значение ${result}`);
+else if (number.length < coutLength) {
+    let result = coutLength - number.length;
+    console.log(`Длина вашего массива: ${number.length}. Длину массива нужно увеличить до ${coutLength}. Прибавьте к массиву значение ${result}`);
+}
+else if (number.length > coutLength) {
+    result = number.length - coutLength;
+    console.log(`Длина вашего массива: ${number.length}. Длину массива нужно уменьшить до ${coutLength}. Удалите из массива ${result} значения`);
 }
