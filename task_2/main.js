@@ -6,7 +6,7 @@ if ( statusPar === true) {
     if (countPar < 4) {
         console.log("Сиди дома");
     } else {
-        console.log("Беги на учебу")
+        console.log("Беги на учебу!")
     }
 } else {
     console.log("Сиди дома!")
